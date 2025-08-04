@@ -1,0 +1,9 @@
+gcloud functions deploy rapsodo_ingest_csv \
+  --gen2 \
+  --runtime=python311 \
+  --region=us-east4 \
+  --entry-point=rapsodo_ingest_csv \
+  --trigger-http \
+  --allow-unauthenticated \
+  --timeout=300s \
+  --set-env-vars=INSTANCE_CONNECTION_NAME="INSERT-CONNECTION-NAME",MYSQL_USER="INSERT-USERNAME",MYSQL_PASSWORD="INSERT-PASSWORD",MYSQL_DATABASE="INSERT-DB-NAME",MYSQL_TABLE="INSERT-TABLE-NAME"
