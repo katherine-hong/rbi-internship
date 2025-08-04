@@ -1,6 +1,6 @@
-const MAIN_FOLDER_ID = 'FOLDER_NAME';
-const PROCESSED_FOLDER_ID = 'FOLDER_NAME';
-const CLOUD_RUN_URL = 'CLOUD_FN_LINK';
+const MAIN_FOLDER_ID = 'FOLDER-LINK-HERE';
+const PROCESSED_FOLDER_ID = 'FOLDER-LINK-HERE';
+const CLOUD_RUN_URL = 'CLOUD-FUNCTION-LINK-HERE';
 
 function checkForNewCSV() {
   const folder = DriveApp.getFolderById(MAIN_FOLDER_ID);
